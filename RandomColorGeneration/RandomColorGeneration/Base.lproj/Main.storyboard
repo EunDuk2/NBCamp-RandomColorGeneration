@@ -40,6 +40,9 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Change Color"/>
+                                                <connections>
+                                                    <action selector="changeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="woC-5T-esu"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q6D-Rd-jsA">
                                                 <rect key="frame" x="148.33333333333331" y="0.0" width="128.33333333333331" height="50"/>
@@ -72,7 +75,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="rgbLabel" destination="KJR-y4-nvX" id="myX-3x-vEr"/>
+                        <outlet property="labelRgb" destination="KJR-y4-nvX" id="sSc-VW-mAZ"/>
+                        <outlet property="viewRgb" destination="41r-tj-TtO" id="EaA-2h-9nr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
