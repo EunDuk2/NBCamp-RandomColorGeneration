@@ -34,6 +34,9 @@ class ViewController: UIViewController {
         viewRgb.backgroundColor = randomColor
         labelRgb.text = "R: \(Int(randomRed * 255)), G: \(Int(randomGreen * 255)), B: \(Int(randomBlue * 255))"
     }
-    
+    @IBAction func resetColor(_ sender: Any) {
+        viewRgb.backgroundColor = .white
+        labelRgb.text = "R: 255, G: 255, B: 255"
+    }
 }
 

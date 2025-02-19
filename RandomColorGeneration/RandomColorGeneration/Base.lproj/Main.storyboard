@@ -52,11 +52,14 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="tinted" title="Reset"/>
+                                                <connections>
+                                                    <action selector="resetColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Anx-8y-nH3"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="KJR-y4-nvX" firstAttribute="centerX" secondItem="41r-tj-TtO" secondAttribute="centerX" id="5Cu-yz-EhI"/>
                                     <constraint firstItem="KJR-y4-nvX" firstAttribute="centerY" secondItem="41r-tj-TtO" secondAttribute="centerY" id="8Xh-Kh-fug"/>
@@ -87,9 +90,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
