@@ -17,20 +17,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        updateUI()
     }
     
-    func update() {
-        viewRgb.backgroundColor = rgbController.getColor()
-        labelRgb.text = rgbController.getRGBLabel()
+    func updateUI() {
+        viewRgb.backgroundColor = rgbController.currentColor
+        labelRgb.text = rgbController.rgbText
     }
 
     @IBAction func changeColor(_ sender: Any) {
-        rgbController.didTapChangeClorButton()
-        update()
+        rgbController.changeColor()
+        updateUI()
     }
     @IBAction func resetColor(_ sender: Any) {
-        rgbController.didTapResetButton()
-        update()
+        rgbController.resetColor()
+        updateUI()
     }
 }
 
